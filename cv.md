@@ -7,8 +7,8 @@ Tel: (33) 308-45-66\
 LinkedIn: [Tatsiana Khadasevich](https://www.linkedin.com/in/tatsiana-khadasevich-75a242129/)\
 GitHub: [TatsianaKhadasevich](https://github.com/TatsianaKhadasevich)
 ## EDUCATION
-**Belarusian State Economic University**, Faculty of International Economic Relations (International investments Specialization) – 2014-2018 (fee-paying).\
-**German Language Courses** – Goethe Institut, Lingualand, EPAM internal courses.
++ **Belarusian State Economic University**, Faculty of International Economic Relations (International investments Specialization) – 2014-2018 (fee-paying).
++ **German Language Courses** – Goethe Institut, Lingualand, EPAM internal courses.
 ## WORK EXPERIENCE
 **Assistant Auditor – Ernst and Young (EY) – Jan till May 2018**\
 Had experience working in stress related situations when short of time, expanded and reinforced accounting knowledge, improved MS Excel skills.\

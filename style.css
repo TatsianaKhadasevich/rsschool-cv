@@ -1,0 +1,239 @@
+:root{
+    --main-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --largest-font-size: 30px;
+    --content-width: 80%;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+
+body{
+    font-family: var(--main-font-family);
+}
+
+.pageName {
+    font-size: var(--largest-font-size);
+    margin: 30px 0;
+    text-align: center;
+}
+
+.content {
+    max-width: 1000px;
+    width: 1000px;
+    width: var(--content-width);
+    
+    margin: 0 auto;
+    margin: 0 10% 0 10%;
+    padding: 50px 5% 0px 5%;
+    /*height: 100vh;*/
+    background-color: rgba(192, 189, 189,0.2);
+    border: 2px solid grey;
+    /*column-count: 3;*/
+}
+
+.content:after {  /*to understand what is it*/
+	content: '';
+	display: inline-block; /*block*/
+    clear: both;
+}
+
+.left_col, .center_col ,.right_col {
+    /*height: fit-content;*/
+    width: 31.6%;
+    display: flex;
+    display: run-in;
+    display: contents; /*when width of screen is small*/
+    display: inline-block;
+    vertical-align: top;
+    /*margin: 20px 0px 0px 20px;*/
+    /*padding: 20px 20px 20px 0;*/
+}
+
+.center_col {
+    margin: 0 2%;
+}
+
+.CV_section_name {
+    font-size: calc(var(--largest-font-size) * 0.75) ;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.position-company-date {
+    /*text-decoration: underline;*/
+    font-size: calc(var(--largest-font-size) * 0.55);
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.skills, .add {
+    display:list-item;
+    margin-bottom: 5px;
+    list-style-type:circle;
+    text-align: justify;
+}
+
+.position_description, .edu_desc {
+    text-align: justify;
+}
+
+.info {
+    margin-bottom: 5px;
+}
+
+.position-company-date {
+    font-style: bold;
+}
+    
+.edu_bold {
+    font-style: bold;
+    font-size: calc(var(--largest-font-size) * 0.55);
+    text-decoration: none;
+    text-align: center;
+}
+
+.info-link {
+    color:black;
+    text-decoration: none;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 75%;
+    box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);
+    padding: 0 auto;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -30px;
+}
+.CV_photo_section {
+    background-color: none;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.name-title {
+    background-color: rgba(250, 50, 50, .2);
+    margin-bottom: 30px;
+    padding: 30px 0px 30px 0;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    font-size: calc(var(--largest-font-size) * 0.75);
+    width: 100%;
+    box-shadow: 4px 4px 5px rgba(48, 44, 44, 0.4);
+    border-radius: 25px;
+    z-index: 1;
+    position: relative;
+}
+
+.CV_section {
+    width: 100%;
+    box-shadow: 4px 4px 5px rgba(48, 44, 44, 0.4);
+    margin-bottom: 10px;
+    padding: 25px;
+    text-align: left;
+    border-radius: 25px;
+    line-height: 25px;
+    background-color: white;
+    overflow: hidden;
+    /*word-break: break-all;
+    display: flex;*/
+}
+
+
+.signature {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* стили для кнопки */
+button {
+    text-transform: uppercase; 
+    /* размеры кнопки */
+    width: 100px;
+    height: 40px;
+    /* граница кнопки */
+    border: 1px solid black;
+    /* белый фон */
+    background-color: white;
+    /* сложная комбинация, чтобы кнопка была по центру экрана */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    /* уберём подсветку кнопки при клике */
+    outline: none;
+    /* приятно — плавные переходы при наведении */
+    transition: all .4s ease;
+    /* настройки шрифта */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-style: bold;
+  }
+  
+  /* стили для кнопки при наведении */
+  button:hover {
+    /* курсор — палец */
+    cursor: pointer;
+    /* малиновая тень */
+    box-shadow: 4px 4px crimson;
+  }
+  
+  .clicked {
+    /* background-color — для цвета фона */
+    background-color: black;
+    /* color — для цвета текста */
+    color: white;
+  }
+
+  .link {
+    /*underline;*/
+    text-decoration: none;
+}
+  
+  .animation-txt {
+    animation: color-change 3s infinite;
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
+  }
+ 
+  @keyframes color-change {
+   0% {
+       color: white;
+   }
+   50% {
+    color: black;
+}
+   100% {
+    color: white;
+}
+  }
+
+  @media (max-width: 1170px) {    /*1020px*/
+    .left_col,.center_col ,.right_col {
+        width: 45%;
+        
+    }
+
+    /*
+    .content {
+        margin: 0;
+    }*/
+}
+
+@media (max-width: 870px){  /*700px*/
+    .left_col,.center_col ,.right_col {
+        width: 70%;
+        display: contents;
+    }
+
+/*    .content {
+        margin: 0 0;
+    } */
+} 
